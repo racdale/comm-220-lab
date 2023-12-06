@@ -1,5 +1,6 @@
 # For a more advanced technique using BERT and embedding models generally, see our recent paper:
 # https://co-mind.org/rdmaterials/php.cv/pdfs/article/rosen_dale_brm_2023.pdf
+# NB: It is preferable to use a model like word2vec for single words; see that Python script
 
 import sys
 from transformers import AutoTokenizer, AutoModel
