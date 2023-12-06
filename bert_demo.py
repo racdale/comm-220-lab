@@ -1,6 +1,7 @@
 # For a more advanced technique using BERT and embedding models generally, see our recent paper:
 # https://co-mind.org/rdmaterials/php.cv/pdfs/article/rosen_dale_brm_2023.pdf
 
+import sys
 from transformers import AutoTokenizer, AutoModel
 import torch
 import numpy as np
