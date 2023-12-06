@@ -23,6 +23,8 @@ def get_embedding(word):
     return outputs.last_hidden_state.mean(dim=1)
 
 def cosine_similarity(vec1, vec2):
+    vec1 = vec1.flatten() # must be 1D
+    vec2 = vec2.flatten()    
     # Calculate cosine SIMILARITY score between two vectors
     return np.dot(vec1, vec2) / (np.linalg.norm(vec1) * np.linalg.norm(vec2))
 
