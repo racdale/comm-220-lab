@@ -30,8 +30,8 @@ def cosine_similarity(vec1, vec2):
 #
 
 # Example words
-w1 = "bart"
-w2 = "homer"
+w1 = sys.argv[1]
+w2 = sys.argv[2]
 
 embedding1 = get_embedding(w1).detach().numpy()
 embedding2 = get_embedding(w2).detach().numpy()
